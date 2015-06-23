@@ -1,0 +1,25 @@
+Hello word
+
+#if ($!{test})
+    In if $!{test}
+#end
+
+#block('test')
+    $!{what} is $this
+    <a href="/test?test=$!{test}" target="_blank">
+        #set($url="/test?test=$!{test}")
+        The href is ${esc.url($url)}
+    </a>
+#end
+
+#macro (inner $foo)
+    inner: $foo
+#end
+
+#script("http://test.baidu.com/index&a=1&b=2")#end
+
+#script()
+    var test = "123";
+#end
+
+${esc.html(${foo})}

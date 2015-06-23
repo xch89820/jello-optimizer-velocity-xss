@@ -8,7 +8,8 @@
   },
   "author": "fis",
   "license": "BSD",
-  "dependencies": {
-    "velocityjs": "0.6.2"
-  }
+  "dependencies": [
+    "velocityjs",
+    "xml2js"
+  ]
 }
